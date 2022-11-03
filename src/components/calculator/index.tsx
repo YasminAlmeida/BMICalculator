@@ -3,6 +3,7 @@ import * as S from './style'
 import { GridItem } from '../galery'
 import { levels, calculateBmi, Level } from '../../helpers/bmi'
 import Arrow from '../../assets/leftarrow.png'
+
 function Calculator() {
     const [heightField, setHeightField] = useState<number>(0)
     const [weightField, setWeightField] = useState<number>(0)
@@ -34,14 +35,16 @@ function Calculator() {
                     placeholder="Digite a sua altura. Ex: 1.5 (em métros)"
                     value={heightField > 0 ? heightField : ''}
                     onChange={(e) => setHeightField(parseFloat(e.target.value))}
+                    disabled={show?true:false}
                 />
                 <S.Input
                     type="number"
                     placeholder="Digite o seu peso. Ex: 75.3 (em kg)"
                     value={weightField > 0 ? weightField : ''}
                     onChange={(e) => setWeightField(parseFloat(e.target.value))}
+                    disabled={show?true:false}
                 />
-                <S.Btn onClick={handleCalculatorBtn}>Calcular</S.Btn>
+                <S.Btn onClick={handleCalculatorBtn} disabled={show?true:false}>Calcular</S.Btn>
             </S.LeftContainer>
             <S.RightContainer>
                 {!show ? (

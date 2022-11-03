@@ -93,6 +93,9 @@ export const Input = styled.input`
   @media(max-width:420px){
     width: 90%;
   }
+  &:disabled{
+    opacity: .8;
+  }
 `
 export const Btn = styled.button`
   background-color: #227c9d;
@@ -110,6 +113,11 @@ export const Btn = styled.button`
   box-shadow: 11px 7px 11px 7px rgba(0, 0, 0, 0.63);
   &:hover {
     background-color: #225c9d;
+  }
+  &:disabled{
+    opacity: .8;
+    background-color: #227c9d;
+    cursor: default;
   }
   @media(max-width:900px){
     width: 80%;
