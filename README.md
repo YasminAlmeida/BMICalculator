@@ -1,4 +1,6 @@
-💡 Projeto de uma Calculadora de IMC (Índice de Massa Corporal) realizado om apoio da plataforma b7web, utilizando React e TypeScript
+## BMICalculator
+
+💡 Projeto de uma Calculadora de IMC (Índice de Massa Corporal) realizado om apoio da plataforma [b7Web], utilizando React + TypeScript
 
 ## 📁 Acesso ao projeto
 https://bmicalculator-omega.vercel.app/
