@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
- 
+import { createGlobalStyle } from 'styled-components'
+
 const GlobalStyle = createGlobalStyle`
   *{
     box-sizing: border-box;
@@ -10,6 +10,6 @@ const GlobalStyle = createGlobalStyle`
     max-width: 900px;
     margin: 40px auto;
   }
-`;
- 
-export default GlobalStyle;
+`
+
+export default GlobalStyle
